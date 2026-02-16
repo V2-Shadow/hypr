@@ -1,0 +1,13 @@
+{
+    "hyprland": {
+        "format": "",
+        "rewrite": {
+            "^$": "Desktop",
+            "^alacritty$": "Terminal",
+            "^zsh$": "Terminalp",
+            "^~$": "Terminal"
+        },
+        "tooltip": false,
+        "swap-icon-label": false
+    }
+}

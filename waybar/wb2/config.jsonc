@@ -1,0 +1,24 @@
+{
+    "include": [
+        "/home/shadow/.config/hypr/waybar/cache/modules/custom/power_menu.jsonc",
+        "/home/shadow/.config/hypr/waybar/cache/modules/custom/distro.jsonc",
+        "/home/shadow/.config/hypr/waybar/cache/modules/hyprland/window.jsonc",
+        "/home/shadow/.config/hypr/waybar/cache/modules/hyprland/clock.jsonc",
+        "/home/shadow/.config/hypr/waybar/wb2/modules/hyprland/network.jsonc"
+    ],
+    "height": 40,
+    "spacing": 4,
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock#date",
+        "custom/distro",
+        "clock#time"
+    ],
+    "modules-right": [
+        "network",
+        "custom/power_menu"
+    ]
+}

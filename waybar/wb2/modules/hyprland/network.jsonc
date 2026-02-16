@@ -1,0 +1,9 @@
+{
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr} 󰈀",
+        "tooltip-format": " {ipaddr}@{ifname}",
+        "format-disconnected": "Disconnected 󰼡",
+        "on-click": "kitty --class term --title 'IpAddress' bash -ic 'ip a; exec bash'"
+    }
+}
