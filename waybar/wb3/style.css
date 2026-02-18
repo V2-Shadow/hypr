@@ -5,9 +5,22 @@
 }
 
 window#waybar {
-    border: 2px solid #ff0;
-    transition-property: background-color;
+    border: 2px solid #c6d0f5;
+    background-color:#232634;
+    color: #fff;
 }
 .modules-right, .modules-left, .modules-center {
     margin: 0 10px;
+}
+
+#network {
+    padding-right: 10px;
+}
+
+#memory {
+    padding-right: 15px;
+}
+
+#cpu {
+    padding-right: 15px;
 }

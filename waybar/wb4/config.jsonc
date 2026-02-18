@@ -74,7 +74,7 @@
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
 	"tooltip-format-disconnected": "Disconnected",
 	"interval": 5,
-	"nospacing": 1,
+	"nospacing": 1
     },
     "wireplumber": {
         "format": "{icon}",

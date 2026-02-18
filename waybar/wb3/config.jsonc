@@ -10,6 +10,7 @@
     "margin-bottom": 0,
 
     "modules-left": [
+        "custom/distro",
         "hyprland/workspaces"
 
     ],
@@ -17,10 +18,12 @@
         "clock"
     ],
     "modules-right": [
+		"cpu",
+		"memory",
+        "network",
         "hyprland/window"
     
     ],
-
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"format-icons": {
@@ -32,8 +35,47 @@
 		},
 		"cursor": true
 	},
-
     "hyprland/window": {
-        "max-length": 50
-    }
+		"format": "{}",
+		"rewrite": {
+			"": "Desktop",
+			"kitty": "Terminal",
+			"zsh": "Terminal",
+			"~": "Terminal"
+		},
+		// "separate-outputs":
+		// "icon":
+		// "icon-size":
+		"min-length": 40,
+		"max-length": 40,
+		// "tooltip":
+		"swap-icon-label": false
+	},
+    	"custom/distro": {
+		"format": "󰣇",
+		"tooltip": false
+	},
+
+        "network": {
+        "format-wifi" : "{icon}",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+        "format-ethernet": "󰀂",
+	"format-alt" : "󱛇",
+        "format-disconnected" : "󰖪",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconnected": "Disconnected",
+	"interval": 5,
+	"nospacing": 1
+    },
+    "memory": {
+        "interval": 5,
+        "format": "RAM {percentage}%",
+        "max-length": 10
+    },
+	"cpu": {
+		"interval": 5,
+		"format": "CPU {usage}%",
+		"max-length": 10
+	}
 }
