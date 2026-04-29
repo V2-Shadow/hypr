@@ -1,7 +1,0 @@
-{
-    "custom/power_menu": {
-        "format": "",
-        "on-click": "kitty ~/.config/hypr/waybar/cache/scripts/power-menu.sh",
-        "tooltip": false
-    }
-}

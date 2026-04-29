@@ -1,26 +1,12 @@
+@define-color background #1e1e2e;
+@define-color light-blue #89dceb;
+@define-color pink #f5c2e7;
+@define-color cream #f5e0dc;
+@define-color accent #45475a;
+
+
 * {
     font-family: "0xProto Nerd Font";
-	font-weight: bold;
-    font-size: 16px;
-}
-
-window#waybar {
-    border: 2px solid #c6d0f5;
-    background-color:#232634;
-    color: #fff;
-}
-.modules-right, .modules-left, .modules-center {
-    margin: 0 10px;
-}
-
-#network {
-    padding-right: 10px;
-}
-
-#memory {
-    padding-right: 15px;
-}
-
-#cpu {
-    padding-right: 15px;
+    font-weight: bold;
+    font-size: 15px;
 }
