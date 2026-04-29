@@ -1,0 +1,104 @@
+{
+	"layer": "top",
+	"position": "top",
+	"mode": "dock",
+	"spacing": 1,
+	"height": 48,
+	"margin-top": 5,
+	"margin-left": 10,
+	"margin-right": 10,
+	"margin-bottom": 0,
+	"modules-left": [
+		"hyprland/workspaces",
+		"cpu",
+		"memory"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"battery",
+		"network",
+		"hyprland/window"
+	],
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"default": ""q
+		},
+		"persistent-workspaces": {
+			"*": 5
+		},
+		"cursor": true
+	},
+	"hyprland/window": {
+		"format": "{}",
+		"rewrite": {
+			"": "Desktop",
+			"kitty": "Terminal",
+			"zsh": "Terminal",
+			"~": "Terminal"
+		},
+		"min-length": 35,
+		"max-length": 35,
+		"swap-icon-label": false
+	},
+	"network": {
+		"format-wifi": " {icon}",
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
+		],
+		"format-ethernet": "󰈁",
+		"format-disconnected": " 󰖈",
+		"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+		"tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+		"tooltip-format-disconnected": "Disconnected",
+		"interval": 5,
+		"min-length": 3,
+		"max-length": 3,
+		"nospacing": 1
+	},
+	"memory": {
+		"interval": 5,
+		"states": {
+			"warning": 75,
+			"critical": 90
+		},
+		"format": " {: >3}%",
+		"on-click": "neohtop",
+		"min-length": 10,
+		"max-length": 10
+	},
+	"cpu": {
+		"interval": 5,
+		"states": {
+			"warning": 75,
+			"critical": 90
+		},
+		"format": " {usage: >3}%",
+		"on-click": "neohtop",
+		"min-length": 10,
+		"max-length": 10
+	},
+	"battery": {
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity: >3}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"min-length": 10,
+		"max-length": 10
+	}
+}

@@ -1,26 +1,121 @@
+@define-color button-color #695659;
+@define-color background-color #3E3234;
+@define-color text-color #FFB6C1;
+
+@define-color charging #B2E2D2;
+@define-color warning #F9E0AF;
+@define-color critical #FFB6C1;
+
 * {
     font-family: "0xProto Nerd Font";
-	font-weight: bold;
+    font-weight: bold;
     font-size: 16px;
+    color: @text-color;
 }
 
 window#waybar {
     border: 2px solid #c6d0f5;
-    background-color:#232634;
-    color: #fff;
+    border-radius: 12px;
+    background-color: @background-color;
+    color: @text-color;
 }
-.modules-right, .modules-left, .modules-center {
-    margin: 0 10px;
+
+button {
+    border-radius: 16px;
+    padding: 0 10px;
+}
+
+button:hover {
+    background-color: @hover-bg;
+    color: @hover-fg;
+}
+
+.modules-right {
+    margin: 0 10px 0 10px;
+}
+
+.modules-center {
+    margin: 0 10px 0 10px;
+}
+
+.modules-left {
+    margin: 0 10px 0 10px;
+}
+
+#workspaces {
+    background: @button-color;
+    padding: 0 10px 0 1px;
+    margin: 6px 2px;
+    border-radius: 12px;
+    color: @text-color;
 }
 
 #network {
-    padding-right: 10px;
+    background: @button-color;
+    padding-right: 15px;
+    margin: 6px 2px 6px 2px;
+    border-radius: 12px;
+    color: @text-color;
 }
 
 #memory {
+    background: @button-color;
     padding-right: 15px;
+    margin: 6px 2px;
+    border-radius: 12px;
+    color: @text-color;
+}
+
+#memory.warning {
+    color: @warning;
+}
+
+#memory.critical {
+    color: @critical;
 }
 
 #cpu {
+    background: @button-color;
     padding-right: 15px;
+    margin: 6px 2px;
+    border-radius: 12px;
+    color: @text-color;
+}
+
+#cpu.warning {
+    color: @warning;
+}
+
+#cpu.critical {
+    color: @critical;
+}
+
+
+#battery {
+    background: @button-color;
+    color: @text-color;
+    margin: 6px 2px;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+#battery.charging {
+    color: @charging;
+}
+
+#battery.warning {
+    color: @warning;
+}
+
+#battery.critical:not(.charging) {
+    color: @critical;
+}
+
+#window {
+    background-color: @background-color;
+    background: @button-color;
+    color: @text-color;
+    margin: 6px 2px;
+    padding: 8px 12px;
+    border-radius: 12px;
 }

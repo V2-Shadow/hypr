@@ -1,6 +1,11 @@
 #! /bin/bash
-Outputs=$(hyprctl monitors | grep '^Monitor' | awk -F'[ :]' '{print $2}') #Get the Names Hyprland gives the monitors
-MonitorCount=$(hyprctl monitors | grep -c '^Monitor') #Get number of monitors
+
+#!!! ONLY WORKS FOR MONITOR DP-2 RIGHT NOW, BECAUSE ITS TO ANNOYING TO USE OTHERWISE
+
+Outputs=DP-2
+MonitorCount=1
+#Outputs=$(hyprctl monitors | grep '^Monitor' | awk -F'[ :]' '{print $2}') #Get the Names Hyprland gives the monitors
+#MonitorCount=$(hyprctl monitors | grep -c '^Monitor') #Get number of monitors
 
 echo "Outputs: $Outputs" 
 echo "Number: $MonitorCount"
@@ -37,7 +42,7 @@ if [ "$SelectorActive" -eq 1 ]; then
     "2") FINAL_PATH="$HOME/.cache/wallpaper/DP-2.png" ;;
     "3") FINAL_PATH="$HOME/.cache/wallpaper/DP-3.png" ;;
     "4") FINAL_PATH="$HOME/.cache/wallpaper/HDMI-A-1.png" ;;
-    esac #Set the finalPath to the chosen Monitor
+esac #Set the finalPath to the chosen Monitor
 else
     case $Outputs in
     "DP-1") FINAL_PATH="$HOME/.cache/wallpaper/DP-1.png" ;;
