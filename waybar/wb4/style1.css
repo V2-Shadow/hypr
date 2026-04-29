@@ -1,0 +1,73 @@
+@define-color background #1e1e2e;
+@define-color light-blue #89dceb;
+@define-color pink #f5c2e7;
+@define-color cream #f5e0dc;
+@define-color accent #45475a;
+
+* {
+    font-family: "0xProto Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+window#waybar {
+    border: 2px solid #c6d0f5;
+    background-color: #232634;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.modules-right,
+.modules-center {
+    margin: 0 10px;
+}
+
+#network {
+    padding-right: 10px;
+}
+
+#memory {
+    padding-right: 15px;
+}
+
+#cpu {
+    padding-right: 15px;
+}
+
+/*#workspaces {
+}*/
+
+#clock {
+    /* Vertical and Horizontal margins */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* Give it a background and rounded corners to see the 'pill' shape */
+    background-color: #232634;
+    border-radius: 15px;
+    padding: 0 20px;
+
+    /* Optional: add a border to define it more */
+    border: 1px solid #c6d0f5;
+}
+
+#workspaces {
+    /* Vertical and Horizontal margins */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #232634;
+    border-radius: 15px;
+    padding: 0 5px;
+    border: 1px solid #c6d0f5;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    min-width: 0;
+    border-radius: 20px;
+    color: #c6d0f5
+}

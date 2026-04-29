@@ -1,7 +1,0 @@
-{
-    "custom/distro": {
-        "format": "",
-        "on-click": "kitty --class waybar --title 'Fastfetch' bash -ic 'fastfetch; exec bash'",
-        "tooltip": false
-    }
-}

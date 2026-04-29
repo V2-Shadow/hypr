@@ -1,24 +1,52 @@
 {
-    "include": [
-        "/home/shadow/.config/hypr/waybar/cache/modules/custom/power_menu.jsonc",
-        "/home/shadow/.config/hypr/waybar/cache/modules/custom/distro.jsonc",
-        "/home/shadow/.config/hypr/waybar/cache/modules/hyprland/window.jsonc",
-        "/home/shadow/.config/hypr/waybar/cache/modules/hyprland/clock.jsonc",
-        "/home/shadow/.config/hypr/waybar/wb2/modules/hyprland/network.jsonc"
-    ],
-    "height": 40,
-    "spacing": 4,
-    "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
-    ],
+    /*------------
+		layout
+	------------*/
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 34,
+    "modules-left": [],
     "modules-center": [
-        "clock#date",
-        "custom/distro",
-        "clock#time"
+        "clock"
     ],
-    "modules-right": [
-        "network",
-        "custom/power_menu"
-    ]
+    "modules-right": [],
+    /*-------------
+		options
+	-------------*/
+    "layer": "top",
+    "output": "DP-2ko",
+    // "position":
+    "height": 40,
+    "width": 0,
+    "margin": 0,
+    // "margin-top":
+    // "margin-left":
+    // "margin-bottom":
+    // "margin-right":
+    "spacing": 0,
+    // "name":
+    "mode": "dock",
+    // "start_hidden":
+    // "modifier-reset":
+    // "exclusive":
+    // "fixed-center":
+    // "passthrough":
+    // "ipc":
+    // "id":
+    "reload_style_on_change": true,
+    /*------------------
+		modules-left
+	------------------*/
+    /*--------------------
+		modules-center
+	--------------------*/
+    "clock": {
+        "tooltip-format": "{calendar}",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
+    }
+    /*-------------------
+		modules-right
+	-------------------*/
 }
